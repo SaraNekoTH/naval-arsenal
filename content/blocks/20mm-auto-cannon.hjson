@@ -1,0 +1,60 @@
+type: ItemTurret
+name: 20mm-auto-cannon
+category: turret
+size: 2
+health: 620
+
+// -- targeting --
+targetAir: true
+targetGround: true
+range: 140
+shootCone: 25
+rotateSpeed: 10
+
+// -- fire rate / feel --
+reload: 10
+recoil: 2
+shootShake: 1.2
+inaccuracy: 1.5
+
+// -- effects / sound --
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+shootSound: 20mm-shoot
+shootSoundVolume: 0.9
+soundPitchMin: 0.92
+soundPitchMax: 1.08
+
+// -- cost --
+requirements: [
+  copper/70
+  graphite/50
+  titanium/35
+]
+research: phalanx-ciws
+
+ammoTypes: {
+  graphite: {
+    type: BasicBulletType
+    damage: 18
+    speed: 38
+    lifetime: 5
+    hitSize: 4
+    ammoMultiplier: 3
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 2
+  }
+
+  titanium: {
+    type: BasicBulletType
+    damage: 30
+    speed: 42
+    lifetime: 5
+    hitSize: 4.5
+    ammoMultiplier: 4
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 3
+  }
+}

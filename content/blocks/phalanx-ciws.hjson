@@ -1,0 +1,66 @@
+type: ItemTurret
+name: phalanx-ciws
+category: turret
+size: 2
+health: 520
+
+// -- targeting --
+targetAir: true
+targetGround: false
+range: 420
+shootCone: 30
+rotateSpeed: 20
+
+// -- fire rate --
+reload: 1.5
+recoil: 0.6
+shootShake: 0.45
+inaccuracy: 2.5
+
+// -- visuals --
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+
+// -- sound --
+shootSound: phalanx-shoot
+shootSoundVolume: 0.5
+soundPitchMin: 0.9
+soundPitchMax: 1.1
+
+// -- cost --
+requirements: [
+  copper/85
+  graphite/65
+  titanium/50
+  silicon/35
+]
+research: duo
+
+ammoTypes: {
+  titanium: {
+    type: BasicBulletType
+    damage: 11
+    speed: 15.5
+    lifetime: 28
+    hitSize: 3.5
+    ammoMultiplier: 5
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 2
+    buildingDamageMultiplier: 0.1
+  }
+
+  surge-alloy: {
+    type: BasicBulletType
+    damage: 24
+    speed: 14.8
+    lifetime: 30
+    hitSize: 4.5
+    ammoMultiplier: 3
+    pierce: true
+    pierceBuilding: true
+    status: shocked
+    statusDuration: 45
+    buildingDamageMultiplier: 0.1
+  }
+}
