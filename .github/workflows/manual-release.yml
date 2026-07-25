@@ -1,0 +1,45 @@
+name: Create Release with ZIP (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_version:
+        description: 'Tag version (e.g., 0.4.1)'
+        required: true
+      release_notes:
+        description: 'Release notes'
+        required: true
+        default: 'Release'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create git tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag ${{ github.event.inputs.tag_version }}
+          git push origin ${{ github.event.inputs.tag_version }}
+
+      - name: Create ZIP file
+        run: |
+          zip -r naval-arsenal-${{ github.event.inputs.tag_version }}.zip . -x ".git/*" ".github/*" "*.zip" ".gitignore"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.event.inputs.tag_version }}
+          body: ${{ github.event.inputs.release_notes }}
+          files: naval-arsenal-${{ github.event.inputs.tag_version }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
