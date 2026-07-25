@@ -11,7 +11,7 @@ shownPlanets: [
 // -- targeting --
 targetAir: true
 targetGround: true
-range: 140
+range: 280
 shootCone: 25
 rotateSpeed: 10
 
@@ -40,7 +40,7 @@ research: phalanx-ciws-erekir
 ammoTypes: {
   graphite: {
     type: BasicBulletType
-    damage: 18
+    damage: 36
     speed: 38
     lifetime: 5
     hitSize: 4
@@ -52,7 +52,7 @@ ammoTypes: {
 
   tungsten: {
     type: BasicBulletType
-    damage: 30
+    damage: 60
     speed: 42
     lifetime: 5
     hitSize: 4.5
