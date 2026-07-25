@@ -1,11 +1,11 @@
 type: ItemTurret
-name: 20mm-auto-cannon
+name: 20mm-auto-cannon-erekir
 category: turret
 size: 2
 health: 620
 envEnabled: -1
 shownPlanets: [
-  serpulo
+  erekir
 ]
 
 // -- targeting --
@@ -29,13 +29,13 @@ shootSoundVolume: 0.9
 soundPitchMin: 0.92
 soundPitchMax: 1.08
 
-// -- cost --
+// -- cost (Erekir materials) --
 requirements: [
-  copper/70
+  beryllium/70
   graphite/50
-  titanium/35
+  tungsten/35
 ]
-research: phalanx-ciws
+research: phalanx-ciws-erekir
 
 ammoTypes: {
   graphite: {
@@ -50,7 +50,7 @@ ammoTypes: {
     pierceCap: 2
   }
 
-  titanium: {
+  tungsten: {
     type: BasicBulletType
     damage: 30
     speed: 42

@@ -1,11 +1,11 @@
 type: ItemTurret
-name: phalanx-ciws
+name: phalanx-ciws-erekir
 category: turret
 size: 2
 health: 520
 envEnabled: -1
 shownPlanets: [
-  serpulo
+  erekir
 ]
 
 // -- targeting --
@@ -31,17 +31,17 @@ shootSoundVolume: 0.5
 soundPitchMin: 0.9
 soundPitchMax: 1.1
 
-// -- cost --
+// -- cost (Erekir materials) --
 requirements: [
-  copper/85
+  beryllium/85
   graphite/65
-  titanium/50
+  tungsten/50
   silicon/35
 ]
-research: duo
+research: breach
 
 ammoTypes: {
-  titanium: {
+  tungsten: {
     type: BasicBulletType
     damage: 11
     speed: 15.5
