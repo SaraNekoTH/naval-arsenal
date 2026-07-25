@@ -42,7 +42,7 @@ ammoTypes: {
     type: BasicBulletType
     damage: 36
     speed: 38
-    lifetime: 5
+    lifetime: 13
     hitSize: 4
     ammoMultiplier: 3
     pierce: true
@@ -54,7 +54,7 @@ ammoTypes: {
     type: BasicBulletType
     damage: 60
     speed: 42
-    lifetime: 5
+    lifetime: 13
     hitSize: 4.5
     ammoMultiplier: 4
     pierce: true
