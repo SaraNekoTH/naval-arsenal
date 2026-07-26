@@ -16,10 +16,10 @@ shootCone: 30
 rotateSpeed: 20
 
 // -- fire rate --
-reload: 1.5
+reload: 2.5
 recoil: 0.6
 shootShake: 0.45
-inaccuracy: 2.5
+inaccuracy: 3
 
 // -- visuals --
 shootEffect: shootSmall
@@ -44,7 +44,7 @@ research: breach
 ammoTypes: {
   tungsten: {
     type: BasicBulletType
-    damage: 11
+    damage: 22
     speed: 15.5
     lifetime: 28
     hitSize: 3.5
@@ -57,7 +57,7 @@ ammoTypes: {
 
   surge-alloy: {
     type: BasicBulletType
-    damage: 24
+    damage: 48
     speed: 14.8
     lifetime: 30
     hitSize: 4.5
