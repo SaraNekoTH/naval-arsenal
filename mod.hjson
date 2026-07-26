@@ -2,7 +2,7 @@ name: "naval-arsenal"
 displayName: "Naval Arsenal"
 author: "SaraNekoTH"
 description: "Real-world inspired heavy weaponry: a Phalanx CIWS-style rotary anti-air gatling turret and a 20mm autocannon. Available on both Serpulo and Erekir. v0.4.0"
-version: "0.4.0"
+version: "0.5.0"
 minGameVersion: "146"
 envEnabled: 3
 dependencies: [ ]

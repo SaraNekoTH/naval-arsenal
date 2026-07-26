@@ -26,6 +26,7 @@ shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
 
 // -- sound --
+ammoUseEffect: shellEjectSmall
 shootSound: phalanx-shoot
 shootSoundVolume: 0.5
 soundPitchMin: 0.9
