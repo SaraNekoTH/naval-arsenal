@@ -11,7 +11,7 @@ shownPlanets: [
 // -- targeting --
 targetAir: true
 targetGround: true
-range: 280
+range: 140
 shootCone: 25
 rotateSpeed: 10
 
@@ -24,7 +24,7 @@ inaccuracy: 1.5
 // -- effects / sound --
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
-ammoUseEffect: shellEjectSmall
+ammoUseEffect: casing1
 shootSound: 20mm-shoot
 shootSoundVolume: 0.9
 soundPitchMin: 0.92
@@ -41,9 +41,9 @@ research: phalanx-ciws-erekir
 ammoTypes: {
   graphite: {
     type: BasicBulletType
-    damage: 36
+    damage: 18
     speed: 38
-    lifetime: 13
+    lifetime: 5
     hitSize: 4
     ammoMultiplier: 3
     pierce: true
@@ -53,9 +53,9 @@ ammoTypes: {
 
   tungsten: {
     type: BasicBulletType
-    damage: 60
+    damage: 30
     speed: 42
-    lifetime: 13
+    lifetime: 5
     hitSize: 4.5
     ammoMultiplier: 4
     pierce: true

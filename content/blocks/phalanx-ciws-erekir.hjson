@@ -16,17 +16,17 @@ shootCone: 30
 rotateSpeed: 20
 
 // -- fire rate --
-reload: 2.5
+reload: 1.5
 recoil: 0.6
 shootShake: 0.45
-inaccuracy: 3
+inaccuracy: 2.5
 
 // -- visuals --
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
 
 // -- sound --
-ammoUseEffect: shellEjectSmall
+ammoUseEffect: casing1
 shootSound: phalanx-shoot
 shootSoundVolume: 0.5
 soundPitchMin: 0.9
@@ -44,7 +44,7 @@ research: breach
 ammoTypes: {
   tungsten: {
     type: BasicBulletType
-    damage: 22
+    damage: 11
     speed: 15.5
     lifetime: 28
     hitSize: 3.5
@@ -57,7 +57,7 @@ ammoTypes: {
 
   surge-alloy: {
     type: BasicBulletType
-    damage: 48
+    damage: 24
     speed: 14.8
     lifetime: 30
     hitSize: 4.5

@@ -24,7 +24,7 @@ inaccuracy: 1.5
 // -- effects / sound --
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
-ammoUseEffect: shellEjectSmall
+ammoUseEffect: casing1
 shootSound: 20mm-shoot
 shootSoundVolume: 0.9
 soundPitchMin: 0.92
