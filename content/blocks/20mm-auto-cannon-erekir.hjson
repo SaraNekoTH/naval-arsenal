@@ -11,7 +11,7 @@ shownPlanets: [
 // -- targeting --
 targetAir: true
 targetGround: true
-range: 280
+range: 140
 shootCone: 25
 rotateSpeed: 10
 
