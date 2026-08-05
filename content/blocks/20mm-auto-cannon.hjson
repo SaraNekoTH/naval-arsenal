@@ -32,11 +32,11 @@ soundPitchMax: 1.08
 
 // -- cost --
 requirements: [
-  copper/70
-  graphite/50
-  titanium/35
+  copper/55
+  graphite/35
+  titanium/25
 ]
-research: phalanx-ciws
+research: duo
 
 ammoTypes: {
   graphite: {

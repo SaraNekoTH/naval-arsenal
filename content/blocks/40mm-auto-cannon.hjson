@@ -1,62 +1,63 @@
 type: ItemTurret
-name: 20mm-auto-cannon
+name: 40mm-auto-cannon
 category: turret
 size: 2
-health: 620
+health: 900
 envEnabled: -1
 shownPlanets: [
-  erekir
+  serpulo
 ]
 
 // -- targeting --
 targetAir: true
 targetGround: true
-range: 140
-shootCone: 25
-rotateSpeed: 10
+range: 170
+shootCone: 20
+rotateSpeed: 8
 
 // -- fire rate / feel --
-reload: 10
-recoil: 2
-shootShake: 1.2
-inaccuracy: 1.5
+reload: 14
+recoil: 3
+shootShake: 1.6
+inaccuracy: 1.2
 
-// -- effects / sound --
+// -- visuals / sound --
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
 ammoUseEffect: casing1
 shootSound: 20mm-shoot
 shootSoundVolume: 0.9
-soundPitchMin: 0.92
-soundPitchMax: 1.08
+soundPitchMin: 0.9
+soundPitchMax: 1.1
 
-// -- cost (Erekir materials) --
+// -- cost --
 requirements: [
-  beryllium/55
-  graphite/35
-  tungsten/25
+  copper/95
+  graphite/60
+  titanium/45
+  silicon/20
 ]
-research: breach
+research: 20mm-auto-cannon
 
 ammoTypes: {
   graphite: {
     type: BasicBulletType
-    damage: 36
-    speed: 38
-    lifetime: 5
-    hitSize: 4
+    damage: 35
+    speed: 9
+    lifetime: 20
+    hitSize: 5
     ammoMultiplier: 3
     pierce: true
     pierceBuilding: true
     pierceCap: 2
   }
 
-  tungsten: {
+  titanium: {
     type: BasicBulletType
-    damage: 60
-    speed: 42
-    lifetime: 5
-    hitSize: 4.5
+    damage: 55
+    speed: 10
+    lifetime: 22
+    hitSize: 5.5
     ammoMultiplier: 4
     pierce: true
     pierceBuilding: true

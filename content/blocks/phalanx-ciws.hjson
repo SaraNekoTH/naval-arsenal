@@ -34,10 +34,9 @@ soundPitchMax: 1.1
 
 // -- cost --
 requirements: [
-  copper/85
-  graphite/65
-  titanium/50
-  silicon/35
+  copper/65
+  graphite/40
+  titanium/30
 ]
 research: duo
 

@@ -1,5 +1,5 @@
 type: ItemTurret
-name: phalanx-ciws-erekir
+name: phalanx-ciws
 category: turret
 size: 2
 health: 520
@@ -34,10 +34,9 @@ soundPitchMax: 1.1
 
 // -- cost (Erekir materials) --
 requirements: [
-  beryllium/85
-  graphite/65
-  tungsten/50
-  silicon/35
+  beryllium/65
+  graphite/40
+  tungsten/30
 ]
 research: breach
 
