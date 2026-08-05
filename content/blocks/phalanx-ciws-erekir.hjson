@@ -44,28 +44,21 @@ research: breach
 ammoTypes: {
   tungsten: {
     type: BasicBulletType
-    damage: 11
+    damage: 22
     speed: 15.5
     lifetime: 28
     hitSize: 3.5
     ammoMultiplier: 5
-    pierce: true
-    pierceBuilding: true
-    pierceCap: 2
-    buildingDamageMultiplier: 0.1
   }
 
   surge-alloy: {
     type: BasicBulletType
-    damage: 24
+    damage: 48
     speed: 14.8
     lifetime: 30
     hitSize: 4.5
     ammoMultiplier: 3
-    pierce: true
-    pierceBuilding: true
     status: shocked
     statusDuration: 45
-    buildingDamageMultiplier: 0.1
   }
 }
