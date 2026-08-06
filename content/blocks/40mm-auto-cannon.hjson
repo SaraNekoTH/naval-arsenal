@@ -11,12 +11,12 @@ shownPlanets: [
 // -- targeting --
 targetAir: true
 targetGround: true
-range: 170
+range: 192
 shootCone: 20
 rotateSpeed: 8
 
 // -- fire rate / feel --
-reload: 14
+reload: 40
 recoil: 3
 shootShake: 1.6
 inaccuracy: 1.2

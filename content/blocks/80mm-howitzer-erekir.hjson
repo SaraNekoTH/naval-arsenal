@@ -1,0 +1,84 @@
+type: ItemTurret
+name: 80mm-howitzer
+category: turret
+size: 3
+health: 1400
+envEnabled: -1
+shownPlanets: [
+  erekir
+]
+
+// -- targeting --
+targetAir: false
+targetGround: true
+range: 480
+shootCone: 10
+rotateSpeed: 5
+
+// -- fire rate / feel --
+reload: 120
+recoil: 5
+shootShake: 2.5
+inaccuracy: 2
+
+// -- visuals / sound --
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+ammoUseEffect: casing2
+shootSound: howitzer-shoot
+shootSoundVolume: 1.0
+soundPitchMin: 0.85
+soundPitchMax: 0.95
+
+// -- cost (Erekir materials) --
+requirements: [
+  beryllium/150
+  graphite/100
+  tungsten/80
+  silicon/50
+]
+research: 40mm-auto-cannon-erekir
+
+ammoTypes: {
+  graphite: {
+    type: FlakBulletType
+    damage: 170
+    splashDamage: 100
+    splashRadius: 40
+    speed: 6
+    lifetime: 80
+    hitSize: 6
+    ammoMultiplier: 2
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+  }
+
+  tungsten: {
+    type: FlakBulletType
+    damage: 270
+    splashDamage: 170
+    splashRadius: 50
+    speed: 6.5
+    lifetime: 74
+    hitSize: 7
+    ammoMultiplier: 3
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 5
+  }
+
+  silicon: {
+    type: FlakBulletType
+    damage: 360
+    splashDamage: 240
+    splashRadius: 60
+    speed: 7
+    lifetime: 70
+    hitSize: 7.5
+    ammoMultiplier: 2
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 6
+  }
+}
