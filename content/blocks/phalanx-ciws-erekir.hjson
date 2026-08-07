@@ -14,6 +14,7 @@ targetGround: false
 range: 240
 shootCone: 30
 rotateSpeed: 20
+collidesGround: false
 
 // -- fire rate --
 reload: 3
@@ -42,19 +43,19 @@ research: breach
 
 ammoTypes: {
   tungsten: {
-    type: BasicBulletType
+    type: FlakBulletType
     damage: 22
     speed: 15.5
-    lifetime: 28
+    lifetime: 16
     hitSize: 3.5
     ammoMultiplier: 5
   }
 
   surge-alloy: {
-    type: BasicBulletType
+    type: FlakBulletType
     damage: 48
     speed: 14.8
-    lifetime: 30
+    lifetime: 16
     hitSize: 4.5
     ammoMultiplier: 3
     status: shocked
