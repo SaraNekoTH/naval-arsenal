@@ -26,6 +26,7 @@ shootEffect: shootBig
 smokeEffect: shootBigSmoke
 ammoUseEffect: casing2
 shootSound: howitzer-shoot
+despawnSound: howitzer-hit
 shootSoundVolume: 1.0
 soundPitchMin: 0.85
 soundPitchMax: 0.95
@@ -41,7 +42,7 @@ research: 40mm-auto-cannon-erekir
 
 ammoTypes: {
   graphite: {
-    type: FlakBulletType
+    type: ArtilleryBulletType
     damage: 170
     splashDamage: 100
     splashRadius: 40
@@ -55,7 +56,7 @@ ammoTypes: {
   }
 
   tungsten: {
-    type: FlakBulletType
+    type: ArtilleryBulletType
     damage: 270
     splashDamage: 170
     splashRadius: 50
