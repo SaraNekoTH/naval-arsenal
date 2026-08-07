@@ -16,10 +16,10 @@ shootCone: 25
 rotateSpeed: 10
 
 // -- fire rate / feel --
-reload: 24
-recoil: 2
-shootShake: 1.2
-inaccuracy: 1.5
+reload: 8
+recoil: 1.5
+shootShake: 0.3
+inaccuracy: 3
 
 // -- effects / sound --
 shootEffect: shootSmall

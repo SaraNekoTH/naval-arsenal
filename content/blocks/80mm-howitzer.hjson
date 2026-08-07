@@ -8,20 +8,20 @@ shownPlanets: [
   serpulo
 ]
 
-// -- targeting --
+# -- targeting --
 targetAir: false
 targetGround: true
 range: 480
 shootCone: 10
 rotateSpeed: 5
 
-// -- fire rate / feel --
+#-- fire rate / feel --
 reload: 120
 recoil: 5
 shootShake: 2.5
 inaccuracy: 2
 
-// -- visuals / sound --
+# -- visuals / sound --
 shootEffect: shootBig
 smokeEffect: shootBigSmoke
 ammoUseEffect: casing2
@@ -31,7 +31,7 @@ shootSoundVolume: 1.0
 soundPitchMin: 0.85
 soundPitchMax: 0.95
 
-// -- cost --
+# -- cost --
 requirements: [
   copper/150
   graphite/100
@@ -44,8 +44,11 @@ ammoTypes: {
   graphite: {
     type: ArtilleryBulletType
     damage: 85
+    trailSize: 4.5
+    trailMult: 0.6
+    trailEffect: artilleryTrail
     splashDamage: 50
-    splashRadius: 40
+    splashDamageRadius: 40
     speed: 6
     lifetime: 80
     hitSize: 6
@@ -58,8 +61,11 @@ ammoTypes: {
   titanium: {
     type: ArtilleryBulletType
     damage: 135
+    trailSize: 4.5
+    trailMult: 0.6
+    trailEffect: artilleryTrail
     splashDamage: 85
-    splashRadius: 50
+    splashDamageRadius: 50
     speed: 6.5
     lifetime: 74
     hitSize: 7
@@ -72,8 +78,11 @@ ammoTypes: {
   silicon: {
     type: ArtilleryBulletType
     damage: 180
+    trailSize: 4.5
+    trailMult: 0.6
+    trailEffect: artilleryTrail
     splashDamage: 120
-    splashRadius: 60
+    splashDamageRadius: 60
     speed: 7
     lifetime: 70
     hitSize: 7.5
